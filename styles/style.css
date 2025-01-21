@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+.quicksand-font {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 1440px;
+    box-sizing: border-box;
+}
+
+section {
+    margin: 70px;
+}
+
+/* Shared Styles */
+.d-flex {
+    display: flex;
+}
+
+.hide {
+    display: none;
+}
+
+/* font-style-share */
+.font-size {
+    font-size: 1.25rem;
+}
+
+/* btn */
+.cursor {
+    border: none;
+    cursor: pointer;
+    padding: 16px 50px;
+    border-radius: 12px;
+    font-size: 1.25rem;
+}
+
+/* blue-color */
+.blue {
+    color: #01ACFD;
+}
+
+.orange {
+    color: #FEA301;
+}
+
+
+
+
+
+
+/* nav */
+.navber {
+    padding-top: 20px;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 120px;
+}
+
+.logo-text {
+    color: rgb(17, 17, 17);
+    font-family: Quicksand;
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 12px;
+    padding-left: 10px;
+}
+
+li,
+a {
+    padding-right: 20px;
+    text-decoration: none;
+    list-style: none;
+}
+
+.home {
+
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.about {
+
+    font-weight: 700;
+}
+
+.facilities {
+    color: #0166fd;
+    font-weight: 700;
+}
+
+.admission {
+    color: #5D58EF;
+    font-weight: 700;
+}
+
+.header-btn {
+    background: #FEA301;
+    color: white;
+}
+
+/* hero */
+.header-left {
+    width: 50%;
+}
+
+.header-container {
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.header-left-title {
+    font-size: 3.5rem;
+}
+
+.header-left-description {
+    padding: 24px 0;
+}
+
+.enroll-btn {
+    color: #fff;
+    background: #111111;
+}
+
+.hero-img {
+    width: 324px;
+}
+
+
+
+
+
+
+
+/* Responsive */
+@media screen and (max-width:430px) {
+    .navber {
+        display: none;
+    }
+
+    .hide {
+        display: unset;
+    }
+
+    .phone-nav {
+        margin-bottom: 28px;
+        width: 430px;
+        padding: 20px;
+        border-bottom: 0.5px solid rgb(254, 163, 1);
+        /* border:  */
+    }
+
+    .logo-icon {
+
+        width: 40px;
+        padding: 16px 297px 0 16px;
+
+    }
+
+    .humburger {
+        width: 30px;
+    }
+
+    /* hero */
+    .header-container {
+        margin-top: 28px;
+        flex-direction: column-reverse;
+    }
+
+    .header-left-title {
+        margin-top: 20px;
+        width: 430px;
+        height: 120px;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .header-left-description {
+        width: 357px;
+        height: 54px;
+        text-align: center;
+    }
+    .enroll-btn{
+        margin-top: 30px;
+    }
+}
