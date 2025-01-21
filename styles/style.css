@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 .quicksand-font {
     font-family: "Quicksand", serif;
@@ -12,13 +12,12 @@
 }
 
 body {
-    margin: 0 auto;
     max-width: 1440px;
     box-sizing: border-box;
 }
 
 section {
-    margin: 70px;
+    margin-bottom: 70px;
 }
 
 /* Shared Styles */
@@ -28,6 +27,13 @@ section {
 
 .hide {
     display: none;
+}
+
+.similar-title {
+    font-size: 2.85rem;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 80px;
 }
 
 /* font-style-share */
@@ -116,6 +122,8 @@ a {
 .header-container {
     align-items: center;
     justify-content: space-evenly;
+    border-bottom: 1px dashed rgb(207, 198, 228);
+    padding-bottom: 60px;
 }
 
 .header-left-title {
@@ -132,12 +140,160 @@ a {
 }
 
 .hero-img {
-    width: 324px;
+    /* width: 324px; */
+}
+
+/* standerd curriculam */
+
+.staderd-curriculum {
+    background-image: url(../assets/bg.png);
+}
+
+.standerd-c-container {
+    justify-content: space-around;
+}
+
+.kinder-c {
+    width: 367px;
+    height: 435px;
+    border: 0.94px solid rgb(222, 245, 255);
+    border-radius: 18.86px;
+
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(222, 245, 255), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+}
+
+.kinder-c-center {
+    width: 367px;
+    height: 435px;
+    box-sizing: border-box;
+    border: 0.94px solid rgb(255, 244, 220);
+    border-radius: 18.86px;
+
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(255, 244, 220), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+}
+
+.kinder-c-right {
+    width: 367px;
+    height: 435px;
+    box-sizing: border-box;
+    border: 0.94px solid rgb(242, 232, 255);
+    border-radius: 18.86px;
+
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(238, 225, 255), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+}
+
+.kinder-img {
+    padding: 40px 115px 20px;
+}
+
+.kinder-title {
+
+    color: rgb(32, 32, 32);
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.kinder-description {
+    color: rgb(128, 128, 128);
+    font-family: Raleway;
+    font-weight: 500;
+    line-height: 28.3px;
+    text-align: center;
+    width: 286.26px;
+    padding: 33px 0;
+    margin: 0 auto;
+}
+
+.read-more {
+    color: rgb(100, 200, 255);
+    font-weight: 700;
+    padding-left: 130px;
+}
+
+.o {
+    color: #F0AA00;
+}
+
+.b {
+    color: #8700FF;
+}
+
+.arro-container {
+
+    padding-bottom: 60px;
+    border-bottom: 1px dashed rgb(207, 198, 228);
+}
+
+.left-arro {
+
+    padding: 80px 10px 0px 555px;
+    width: 50px;
+}
+
+.leftt-arro {
+    width: 50px;
+}
+
+/* our-story-title */
+.our-story {
+    background: url(..//assets/bg.png), linear-gradient(0.00deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
+    /* height: 1018px; */
+    width: 100%;
+}
+
+.our-story-card-container {
+    width: 380.27px;
+    padding-left: 32px;
+    padding-bottom: 34px;
+    /* margin: 0 auto; */
+    border-radius: 16px;
+    background: rgb(255, 255, 255);
+}
+
+.story-1-img {
+    border-radius: 16px 16px 0 0;
+    width: 380px;
+}
+
+.story-btn {
+    border-radius: 47.93px;
+    padding: 15px 20px;
+    border: none;
+    position: relative;
+    top: -23px;
+    left: 17px;
+    background: rgb(60, 216, 232);
+}
+
+.story-card-title {
+    padding: 30px 0 50px 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.story-card-description {
+    /* width: 433.06px; */
+    color: #666666;
+    font-family: Raleway;
+    font-weight: 500;
 }
 
 
+/* top-left */
+.right-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
 
-
+.story-card-tl {
+    width: 250px;
+    padding: 20px;
+    margin: 20px;
+}
 
 
 
@@ -149,6 +305,11 @@ a {
 
     .hide {
         display: unset;
+    }
+
+    body {
+        /* margin: 0;
+        padding: 0; */
     }
 
     .phone-nav {
@@ -178,16 +339,14 @@ a {
 
     .header-left-title {
         margin-top: 20px;
-        width: 357px;
+        /* width: 200px; */
         text-align: center;
         font-size: 2rem;
     }
 
-    .header-left-description {
-        max-width: 357px;
-        /* text-align: center; */
-    }
-    .enroll-btn{
+    .header-left-description {}
+
+    .enroll-btn {
         /* margin-top: 30px; */
     }
 }
