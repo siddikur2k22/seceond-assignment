@@ -18,7 +18,8 @@ body {
 section {
     margin-bottom: 70px;
 }
-section> .our-story{
+
+section>.our-story {
     margin-bottom: 0px;
 }
 
@@ -61,6 +62,9 @@ section> .our-story{
     color: #FEA301;
 }
 
+.white {
+    color: #fff;
+}
 
 
 
@@ -126,7 +130,6 @@ a {
 .header-container {
     align-items: center;
     justify-content: space-around;
-    /* border-bottom: 1px dashed rgb(207, 198, 228); */
     padding-bottom: 60px;
     max-width: 1140px;
     margin: 0 auto;
@@ -146,9 +149,7 @@ a {
     background: #111111;
 }
 
-.hero-img {
-    /* width: 324px; */
-}
+.hero-img {}
 
 /* standerd curriculam */
 
@@ -251,12 +252,12 @@ a {
 }
 
 /* our-story-title */
-.our-story,section {
-    
-    
+.our-story {
+
+    margin: 0;
     background: url(..//assets/bg.png), linear-gradient(0.00deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
 
-   
+
 }
 
 .our-story-card-container {
@@ -355,31 +356,34 @@ a {
 
 /* footer */
 footer {
-    /* position: relative; */
-    top: -60px;
-    margin-top: 90px;
     background: #01ACFD;
-    height: 519px;
-    margin: 0 auto;
+    height: auto;
 }
 
 .footer-container {
-   max-width: 1140px;
-   align-items: center;
-   justify-content: center;
+    max-width: 1140px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-left-side {
+    padding-top: 100px;
+    padding: 120px;
 }
 
 .d-inline {
     display: inline-flex;
+    padding-bottom: 35px;
 }
 
 .footer-logo {
     width: 100px;
     padding-right: 15px;
+
 }
 
 .footer-left-title {
-    color: rgb(255, 255, 255);
     font-size: 2.6rem;
     font-weight: 700;
     line-height: 39.51px;
@@ -387,14 +391,40 @@ footer {
 
 .footer-left-description {
     width: 399.02px;
-    color: rgb(255, 255, 255);
     font-size: 1.25rem;
     line-height: 25px;
 }
 
+/* footer-right-side */
+
+.about-school {
+    margin-top: 69px;
+    padding-bottom: 30px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.footer-list {
+    color: white;
+    font-weight: 500;
+}
+
+/* footer-right-side */
+.keep-in-touch {
+    font-size: 1.28rem;
+    font-weight: 700;
+    line-height: 26px;
+    padding-bottom: 50px;
+
+}
+.icon{
+    padding-bottom: 30px;
+}
+
 
 /* Responsive */
-@media screen and (max-width:430px) {
+@media screen and (max-width:576px) {
 
     /* hide */
     .navber,
@@ -417,7 +447,6 @@ footer {
         display: unset;
     }
 
-    body {}
 
     .phone-nav {
         margin-bottom: 28px;
@@ -531,5 +560,23 @@ footer {
     .va {
         margin: -9px 0 0 35%;
         margin-bottom: 60px;
+    }
+
+    /* footer */
+
+    .footer-container{
+        padding-left: 20px;
+        flex-direction: column;
+    }
+    .footer-left-side{
+        padding: 120px 0 0 0;
+        /* padding-bottom: 0; */
+    }
+
+    .footer-center{
+        padding-right: 230px;
+    }
+    .footer-right-side{
+        padding-right: 116px;
     }
 }
