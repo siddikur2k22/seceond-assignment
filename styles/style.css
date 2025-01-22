@@ -149,7 +149,6 @@ a {
     background: #111111;
 }
 
-.hero-img {}
 
 /* standerd curriculam */
 
@@ -238,7 +237,6 @@ a {
     max-width: 1140px;
     margin: 0 auto;
     padding-bottom: 60px;
-    border-bottom: 1px dashed rgb(207, 198, 228);
 }
 
 .left-arro {
